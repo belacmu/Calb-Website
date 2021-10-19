@@ -78,7 +78,7 @@ each thumbnail image in the playlist */
 	margin-top: 16px;
 	margin-left:37px;
 	margin-right:38px;
-	padding-bottom: 12px;
+	padding-bottom: 0px;
 	-webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
@@ -118,7 +118,7 @@ each thumbnail image in the playlist */
 }
 
 .vid-item .desc {
-	font-size: 14px;
+	font-size: 12px;
 	margin-top:5px;
   word-wrap:break-word;
 }
