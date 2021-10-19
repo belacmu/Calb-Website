@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calb</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />    
+    <!-- MyList Styles -->
+    <link rel="stylesheet" href="mylist-player/css/mylist-player.css" />
+
+    <!-- MyList PLAYER SETTINGS -->
+    <script type="text/javascript">
+      var playListID = ["PLcEgueYKDm_R28XrwSN7ngTEcs7spmLF3"]; // replace with your desired youtube playlist ID
+      var apiKey = "AIzaSyB_dEWORld9GsfKXc3tqtmi-oZoByVQ4lQ"; // this default YouTube API key will work but you should change it to your own
+      var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
+      var showPlayerControls = 1; // display YouTube video player controls? 0 for no. 1 for yes.
+      var showTitlesInList = 1; // display video titles under each thumbnail in playlist? 0 for no. 1 for yes.
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- MyList Javascript -->
+    <script src="mylist-player/js/mylist-player.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html" class="mainbutton">Calb</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contentbox" id="youtube"> 
+        <div id="player-container1" class="player-container">
+          <!-- THE YOUTUBE PLAYER -->
+          <div class="mlvp-container">
+              <div id="vid_frame1"></div>
+          </div>
+          <!-- LEFT AND RIGHT ARROWS -->
+          <div class="mlvp-arrows">
+              <div class="mlvp-arrow-left"><i class="demo-icon icon-left-open">&#xe800;</i></div>
+              <div class="mlvp-arrow-right"><i class="demo-icon icon-right-open">&#xe801;</i></div>
+          </div>
+          <!-- THE PLAYLIST -->
+          <div class="mlvp-list-container">
+              <div class="mlvp-list noselect" ></div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div class=contentbox id="dj">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1333601878&color=%23ff5500&auto_play=false&hide_related=false&show_playcount=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div style="font-size: 8px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      </div>
+
+    </main>
+  </body>
+</html>

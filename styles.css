@@ -1,0 +1,134 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  background-attachment:fixed;
+  height: 100%;
+}
+
+header > nav {
+  position: static;
+  font-size: 1.2em;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  background-color: black;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar > li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.navbar > li > a {
+    color: lightgrey;
+    text-decoration: none;
+    will-change: transform, color, text-decoration;
+    position: relative;
+    padding: 8px 16px;
+}
+
+.navbar > li > a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.mainbutton{
+    font-weight: bold;
+    border: solid;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentbox{
+  display: flex;
+  overflow-y: scroll;
+
+  width: 70%;
+  max-width: 700px;
+}
+
+#youtube{
+  background-color: white;
+}
+
+#dj{
+  background-color: green;
+}
+
+.content{
+  flex-shrink: 0;
+  height: 100px;
+  width: 500px;
+}
+
+
+
+
+
+
+h1 {
+  position: relative;
+  width: auto;
+  text-align: center;
+  font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+  font-size: 4em;
+}
+
+h2 {
+  position: relative;
+  width: auto;
+  font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .italics {
+    font-style: italic;
+  }
