@@ -75,12 +75,15 @@ nav{
 
 .Calb{
     font-weight: bold;
-    /* border: solid; */
-    background-color: grey;
     position:absolute;
     height: 6vh;
     left: 0;
 }
+.Calb > a {
+  text-transform: uppercase;
+  font-size:2em;
+}
+
 .Projects{
   background-color: #ff4d40;
 }
@@ -153,4 +156,27 @@ p {
 
   .italics {
     font-style: italic;
+  }
+
+  @media screen and (max-width: 600px) {
+    .contentbox{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    .bigbox{
+      width: 90%;
+      margin: 10px;
+    }
+    
+    .smallbox{
+      width: 90%;
+      margin: 10px;
+    }
+    #youtubeembed{
+      order: 1;
+    }
+    .Calb > a {
+      font-size:1.5em;
+    }
   }
