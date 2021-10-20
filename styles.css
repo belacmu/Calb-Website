@@ -17,10 +17,6 @@ body {
   height: 100%;
 }
 
-nav{
-  
-}
-
 .navbar {
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
@@ -41,7 +37,7 @@ nav{
 
 .navbar > li {
   width: 20%;
-  max-width: 200px;
+  max-width: 150px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -81,7 +77,7 @@ nav{
 }
 .Calb > a {
   text-transform: uppercase;
-  font-size:2em;
+  font-size:2.2em;
 }
 
 .Projects{
@@ -108,6 +104,7 @@ main {
   background-color: rgb(247, 247, 247);
 }
 
+/*
 #youtube{
 }
 
@@ -116,7 +113,7 @@ main {
 
 #mixcloud{
 }
-
+*/
 
 .bigbox{
   width: 60%;
@@ -177,6 +174,6 @@ p {
       order: 1;
     }
     .Calb > a {
-      font-size:1.5em;
+      font-size:1.6em;
     }
   }
