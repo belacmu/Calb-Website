@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0px;
   /* padding: 20px; */
-  height: 6vh;
+  height: 50px;
   background-color: #202020;
   list-style: none;
 
@@ -66,7 +66,7 @@ body {
 #banner{
   width: 80%;
   margin: auto;
-  max-height: 25vh;
+  max-height: 190px;
   object-fit: cover;
   margin-bottom: -25px;
 }
@@ -77,7 +77,7 @@ body {
 .Calb{
     font-weight: bold;
     position:absolute;
-    height: 6vh;
+    height: 50px;
     left: 0;
 }
 .Calb > a {
