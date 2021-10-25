@@ -186,6 +186,9 @@ p {
     #youtubeembed{
       order: 1;
     }
+    #abouttext{
+      order: 1;
+    }
     .Calb > a {
       font-size:1.3em;
     }
