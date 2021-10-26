@@ -248,7 +248,7 @@ p {
     #abouttext{
       order: -1;
     }
-    .Calb > a {
-      font-size:1.3em;
+    .Calb a img{
+      height: 20px;
     }
   }
