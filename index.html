@@ -9,27 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="styles.css" />   
+    <link rel="stylesheet" type="text/css" href="styles.css" />    
     <style>
-      .Projects{background-color: #ff4d40;}
+      .Store{background-color: #ff4d40;}
     </style> 
-    <!-- MyList Styles -->
-    <link rel="stylesheet" href="mylist-player/css/mylist-player.css" />
-
-    <!-- MyList PLAYER SETTINGS -->
-    <script type="text/javascript">
-      var playListID = ["PLcEgueYKDm_R28XrwSN7ngTEcs7spmLF3"]; // replace with your desired youtube playlist ID
-      var apiKey = "AIzaSyB_dEWORld9GsfKXc3tqtmi-oZoByVQ4lQ"; // this default YouTube API key will work but you should change it to your own
-      var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
-      var showPlayerControls = 1; // display YouTube video player controls? 0 for no. 1 for yes.
-      var showTitlesInList = 1; // display video titles under each thumbnail in playlist? 0 for no. 1 for yes.
-    </script>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- MyList Javascript -->
-    <script src="mylist-player/js/mylist-player.js"></script>
 
   </head>
 
@@ -38,84 +21,23 @@
       <nav>
         <ul class="navbar">
           <li class="Calb"><a href="index.html"><img src="images/calb logo white.png"> </a></li>
-          <li class="Projects"><a href="index.html">Projects</a></li>
+          <li class="Projects"><a href="projects.html">Projects</a></li>
           <li class="About"><a href="about.html">About</a></li>
           <li class="Contact"><a href="contact.html">Contact</a></li>
-          <li class="Store"><a href="store.html">Store</a></li>
+          <li class="Store"><a href="index.html">Store</a></li>
         </ul>
       </nav>
     </header>
 
-    
 
     <main>
-      <div class="contentbox" id="bannerbox"> 
-        <img src="/images/calbbanner.png" alt="calb banner image"  id="banner">
-      </div>
-
-      <div class="contentbox" id="youtube"> 
-        <div class="bigbox" id="youtubeembed">
-          <div id="player-container1" class="player-container">
-              <!-- THE YOUTUBE PLAYER -->
-              <div class="mlvp-container">
-                  <div id="vid_frame1"></div>
-              </div>
-              <!-- LEFT AND RIGHT ARROWS -->
-              <div class="mlvp-arrows">
-                  <div class="mlvp-arrow-left"><i class="demo-icon icon-left-open">&#xe800;</i></div>
-                  <div class="mlvp-arrow-right"><i class="demo-icon icon-right-open">&#xe801;</i></div>
-              </div>
-              <!-- THE PLAYLIST -->
-              <div class="mlvp-list-container">
-                  <div class="mlvp-list noselect" ></div>
-              </div>
-          </div>
-        </div>
-        <div class="smallbox">
-          <h2>Visual Mix Projects</h2>
-          <p>Calb's visual mashup albums have been called "interdisciplinary works of art" and 
-            "compelling composites that transform beloved source material".
-            Calb has used music from Daft Punk, Michael Jackson, Bon Iver, Frank Ocean, Tame Impala, The 1975, James Blake, and A$AP Rocky to make these full-length visual mixes. 
-            He's currently working on a project using music from Coldplay's discography.
-          </p>
-          
-          
-        </div>
-      </div>
-      
-      <div class="contentbox" id="mixcloud">
-        <div class="smallbox">
-          <h2>DJ Mixes</h2>
-          <p>DJing for friends since 2013, Calb has developed a distinct taste and mixing style. 
-            These mixes showcase his diversity of genres and styles, from the low-key early night vibes in 
-            "Triple Birthday Deluxe - Opening Set", to  bangers for the peak hour in "Totally Unprepared Club 
-            Stuff".
-             </p>
-        </div>
-        <div class="bigbox">
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2Flive-bymad-groove-house-rap%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2F100-good-times-mix-feb-2020%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2Fburgerhouse-mix-restaurant-tunes%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2Flive-triple-birthday-deluxe-set-1%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2Flive-triple-birthday-deluxe-closing-set-mar-2020%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fcalbmusic%2Ftotally-unprepared-club-stuff-jan-2020%2F" frameborder="0" ></iframe>
-        </div>
-      </div>
-      
-      
-      <div class="contentbox" id="coveredbybox">
-        <div class="biggestbox">
-          <h2>Featured on</h2>
-          <img src="images/logos/triplej red.png" class="logo">
-          <img src="images/logos/nme red.png" class="logo">
-          <img src="images/logos/musicradar red.png" class="logo">
-          <img src="images/logos/EDM+com red.png" class="logo">
-          <img src="images/logos/okayplayer red.png" class="logo">
-        </div>
-      </div>
-
     </main>
 
+    <div id="my-store-69088257"></div>
+    <div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?69088257&data_platform=code&data_date=2021-12-18" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-69088257");</script>
+    </div>
+    
     <footer>
       
     </footer>
