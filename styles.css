@@ -19,7 +19,8 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  color: #e8e6e3;
+  background-color: #181a1b;
   background-attachment:fixed;
   min-height: 100vh; 
   display: block;
@@ -68,11 +69,11 @@ footer{
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color: rgb(247, 247, 247)
+  background-color: #181a1b
 }
 
 a{
-  color: #ff4d40;
+  color: rgb(255, 83, 70);
   text-decoration: none;
   will-change: transform, color, text-decoration;
 }
@@ -82,7 +83,7 @@ a:hover {
 }
 
 #bannerbox{
-  background: white;
+  background: none !important;
 }
 
 #banner{
@@ -125,7 +126,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(29,31,32);
 }
 
 /*
@@ -196,7 +197,7 @@ main {
 .logo{
   max-width: 200px;
   margin: 20px;
-  filter: grayscale(100%) brightness(0%);
+  filter: grayscale(100%) brightness(100%);
   
 }
 
@@ -209,12 +210,12 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   text-align:center;
-  color: #ff4d40;
+  color: rgb(255, 83, 70);
 }
 
 p {
   text-align:justify;
-  color: black;
+  color: #e8e6e3;
   font-family: 'Roboto', sans-serif;
 }
 
