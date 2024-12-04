@@ -89,8 +89,8 @@ a:hover {
 #banner{
   width: 80%;
   margin: auto;
-  max-height: 190px;
-  object-fit: cover;
+  max-height: 130px;
+  object-fit: scale-down;
   margin-bottom: -25px;
 }
 
