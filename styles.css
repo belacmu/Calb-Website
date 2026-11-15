@@ -942,8 +942,11 @@ h1 {
     display: none;
   }
 
+  /* fixed width: long single-line titles must not stretch their card */
   .albums li {
     flex: 0 0 34%;
+    width: 34%;
+    min-width: 0;
     scroll-snap-align: start;
   }
 
