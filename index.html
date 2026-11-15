@@ -13,16 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mylist-player/css/mylist-player.css" />
-    <script>
-      var playListID = ["PLcEgueYKDm_R28XrwSN7ngTEcs7spmLF3"];
-      var apiKey = "AIzaSyB_dEWORld9GsfKXc3tqtmi-oZoByVQ4lQ";
-      var autoPlayNext = 0;
-      var showPlayerControls = 1;
-      var showTitlesInList = 1;
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="mylist-player/js/mylist-player.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -112,18 +102,51 @@
       <section class="section" id="mashups">
         <div class="wrap grid reverse">
           <div class="media-first align-h2">
-            <div id="player-container1" class="player-container">
-              <div class="mlvp-container">
-                <div id="vid_frame1"></div>
-              </div>
-              <div class="mlvp-arrows">
-                <div class="mlvp-arrow-left" aria-label="Previous"><i class="demo-icon icon-left-open">&#xe800;</i></div>
-                <div class="mlvp-arrow-right" aria-label="Next"><i class="demo-icon icon-right-open">&#xe801;</i></div>
-              </div>
-              <div class="mlvp-list-container">
-                <div class="mlvp-list noselect"></div>
-              </div>
-            </div>
+            <button class="yt-player" id="yt-player" type="button" data-id="COx8HzGsCgM" aria-label="Play video">
+              <img src="https://i.ytimg.com/vi/COx8HzGsCgM/hqdefault.jpg" alt=""><span class="play" aria-hidden="true"></span>
+            </button>
+            <ul class="albums" aria-label="Mashup albums">
+              <li><button class="album" type="button" data-id="COx8HzGsCgM" aria-current="true" title="Thriller Access Memories (Michael Jackson &times; Daft Punk)">
+                <img src="https://i.ytimg.com/vi/COx8HzGsCgM/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Thriller Access Memories</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="HWF2dZV0MLY" title="Blonded Currents (Frank Ocean &times; Tame Impala)">
+                <img src="https://i.ytimg.com/vi/HWF2dZV0MLY/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Blonded Currents</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="L8iKx9Fhlak" title="Ceiling In Our Garden (Bon Iver &times; Bon Iver)">
+                <img src="https://i.ytimg.com/vi/L8iKx9Fhlak/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Ceiling In Our Garden</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="4HnS9sQC7ew" title="Lights Will Guide You Home (Coldplay &times; Coldplay)">
+                <img src="https://i.ytimg.com/vi/4HnS9sQC7ew/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Lights Will Guide You Home</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="vtFG-OXmwB4" title="Modernity Has Failed Us (The 1975 &times; The 1975)">
+                <img src="https://i.ytimg.com/vi/vtFG-OXmwB4/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Modernity Has Failed Us</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="SecmWzDWid4" title="Renaissance Discovery (Beyonc&eacute; &times; Daft Punk)">
+                <img src="https://i.ytimg.com/vi/SecmWzDWid4/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Renaissance Discovery</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="HAbwxb3hKA4" title="My Brockhampton Dark Twisted Fantasy (Brockhampton &times; Kanye West)">
+                <img src="https://i.ytimg.com/vi/HAbwxb3hKA4/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">My Brockhampton Dark Twisted Fantasy</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="rtV3m87bQ9g" title="The Kanye West &amp; Taylor Swift Album We Never Got (Kanye West &times; Taylor Swift)">
+                <img src="https://i.ytimg.com/vi/rtV3m87bQ9g/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">The Kanye West &amp; Taylor Swift Album We Never Got</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="bkhLBam_its" title="Brat &amp; The Dream Police (Mk.gee &times; Charli xcx)">
+                <img src="https://i.ytimg.com/vi/bkhLBam_its/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">Brat &amp; The Dream Police</span>
+              </button></li>
+              <li><button class="album" type="button" data-id="nSO-oX48gOE" title="OVERGROWN.A$AP (A$AP Rocky &times; James Blake)">
+                <img src="https://i.ytimg.com/vi/nSO-oX48gOE/mqdefault.jpg" alt="" loading="lazy">
+                <span class="album-title">OVERGROWN.A$AP</span>
+              </button></li>
+            </ul>
           </div>
           <div>
             <span class="eyebrow">Visual albums</span>
@@ -182,5 +205,29 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // Lightweight YouTube player: thumbnail until play, then the real embed.
+      (function () {
+        var player = document.getElementById("yt-player");
+        if (!player) return;
+        function play(id) {
+          player.dataset.id = id;
+          player.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+            '?autoplay=1&rel=0" title="YouTube video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+        }
+        player.addEventListener("click", function () {
+          if (!player.querySelector("iframe")) play(player.dataset.id);
+        });
+        document.querySelectorAll(".album").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            document.querySelectorAll(".album[aria-current]").forEach(function (b) { b.removeAttribute("aria-current"); });
+            btn.setAttribute("aria-current", "true");
+            play(btn.dataset.id);
+            var top = player.getBoundingClientRect().top;
+            if (top < 60) window.scrollTo({ top: window.scrollY + top - 80, behavior: "smooth" });
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
