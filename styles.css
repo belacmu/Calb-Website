@@ -910,7 +910,8 @@ h1 {
   }
 
   /* media under text on mobile, except where noted */
-  .grid .media-first {
+  .grid .media-first,
+  .grid .text-first {
     order: -1;
   }
 
