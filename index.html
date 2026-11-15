@@ -3,116 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Calb</title>
+    <title>Calb — DJ in Oslo</title>
+    <meta name="description" content="Calb is an Oslo-based DJ playing house, disco, garage and groove for clubs, bars and private events. His mashup albums have been covered by NME, MusicRadar, Okayplayer and EDM.com." />
+    <meta name="theme-color" content="#0f1011" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="styles.css" />   
-    <style>
-      .Projects{background-color: rgb(255, 83, 70);}
-    </style> 
-    <!-- MyList Styles -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mylist-player/css/mylist-player.css" />
-
-    <!-- MyList PLAYER SETTINGS -->
-    <script type="text/javascript">
-      var playListID = ["PLcEgueYKDm_R28XrwSN7ngTEcs7spmLF3"]; // replace with your desired youtube playlist ID
-      var apiKey = "AIzaSyB_dEWORld9GsfKXc3tqtmi-oZoByVQ4lQ"; // this default YouTube API key will work but you should change it to your own
-      var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
-      var showPlayerControls = 1; // display YouTube video player controls? 0 for no. 1 for yes.
-      var showTitlesInList = 1; // display video titles under each thumbnail in playlist? 0 for no. 1 for yes.
+    <script>
+      var playListID = ["PLcEgueYKDm_R28XrwSN7ngTEcs7spmLF3"];
+      var apiKey = "AIzaSyB_dEWORld9GsfKXc3tqtmi-oZoByVQ4lQ";
+      var autoPlayNext = 0;
+      var showPlayerControls = 1;
+      var showTitlesInList = 1;
     </script>
-
-    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- MyList Javascript -->
     <script src="mylist-player/js/mylist-player.js"></script>
-
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul class="navbar">
-          <li class="Calb"><a href="index.html"><img src="images/calb logo white.png"> </a></li>
-          <li class="Projects"><a href="index.html">Projects</a></li>
-          <li class="About"><a href="about.html">About</a></li>
-          <li class="Contact"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Calb home"><img src="images/calb logo white.png" alt="Calb"></a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li class="social">
+              <a href="https://www.instagram.com/calbmusic/" aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" class="dot"/></svg>
+              </a>
+              <a href="https://www.mixcloud.com/calbmusic/" aria-label="Mixcloud" title="Mixcloud">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 18h11a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.6 9.2 4.4 4.4 0 0 0 6.5 18z"/><path d="M10 15v-3M12.5 15v-4.5M15 15v-3"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@Calbmusic" aria-label="YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" class="fill"/></svg>
+              </a>
+            </li>
+            <li><a href="index.html" aria-current="page">Music</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="nav-book" href="contact.html">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    
-
     <main>
-      <div class="contentbox" id="bannerbox"> 
-        <img src="/images/calbbanner.png" alt="calb banner image"  id="banner">
-      </div>
-
-      <div class="contentbox" id="youtube"> 
-        <div class="bigbox" id="youtubeembed">
-          <div id="player-container1" class="player-container">
-              <!-- THE YOUTUBE PLAYER -->
-              <div class="mlvp-container">
-                  <div id="vid_frame1"></div>
-              </div>
-              <!-- LEFT AND RIGHT ARROWS -->
-              <div class="mlvp-arrows">
-                  <div class="mlvp-arrow-left"><i class="demo-icon icon-left-open">&#xe800;</i></div>
-                  <div class="mlvp-arrow-right"><i class="demo-icon icon-right-open">&#xe801;</i></div>
-              </div>
-              <!-- THE PLAYLIST -->
-              <div class="mlvp-list-container">
-                  <div class="mlvp-list noselect" ></div>
-              </div>
+      <section class="intro-hero">
+        <div class="wrap intro-grid">
+          <div class="intro-text">
+            <p class="tagline">DJ <span>/</span> Mashup artist <span>/</span> Oslo</p>
+            <h1 class="name">Calb</h1>
+            <p>House, disco, garage and groove. Based in Oslo, available for clubs, bars and private events.
+              &ensp;<a class="more inline" href="about.html">More about Calb &rarr;</a></p>
+            <div class="actions">
+              <a class="btn" href="mailto:belacmu@gmail.com?subject=DJ%20booking%20inquiry">Book a set</a>
+              <a class="btn ghost" href="#mixes">Listen</a>
+            </div>
+            <div class="intro-social" aria-label="Social links">
+              <a href="https://www.instagram.com/calbmusic/" aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" class="dot"/></svg>
+              </a>
+              <a href="https://www.mixcloud.com/calbmusic/" aria-label="Mixcloud" title="Mixcloud">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 18h11a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.6 9.2 4.4 4.4 0 0 0 6.5 18z"/><path d="M10 15v-3M12.5 15v-4.5M15 15v-3"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@Calbmusic" aria-label="YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" class="fill"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="intro-photo">
+            <img src="images/dj/bw-portrait.jpg" alt="Calb behind the decks">
           </div>
         </div>
-        <div class="smallbox">
-          <h2>Longform Mashup Projects</h2>
-          <p>Calb's visual mashup albums have been called "interdisciplinary works of art" and 
-            "compelling composites that transform beloved source material".
-            Calb has used music from Daft Punk, Beyonce, Michael Jackson, Bon Iver, Frank Ocean, Tame Impala, The 1975, James Blake, and A$AP Rocky to make these full-length visual mixes.           </p>
-          
-          
-        </div>
-      </div>
-      
-      <div class="contentbox" id="mixcloud">
-        <div class="smallbox">
-          <h2>DJ Mixes</h2>
-          <p>DJing since 2013 and professionally since 2021, Calb has developed a distinct taste and mixing style. 
-            These mixes showcase his diversity of genres and styles. Contact via email for bookings.
-             </p>
-        </div>
-        <div class="bigbox">
-          <iframe width="100%" height="60" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&dark=1&feed=%2Fcalbmusic%2Fproper-party-live-kulturhuset%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&dark=1&feed=%2Fcalbmusic%2Fhouse-teatro-terasse-june-2023%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&dark=1&feed=%2Fcalbmusic%2Fprimetime-mix-house-melodic-tech-house%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&dark=1&feed=%2Fcalbmusic%2Flive-bymad-groove-house-rap%2F" frameborder="0" ></iframe>
-          <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&dark=1&feed=%2Fcalbmusic%2Fburgerhouse-mix-restaurant-tunes%2F" frameborder="0" ></iframe>
-        </div>
-      </div>
-      
-      
-      <div class="contentbox" id="coveredbybox">
-        <div class="biggestbox">
-          <h2>Featured on</h2>
-          <img src="images/logos/triplej red.png" class="logo">
-          <img src="images/logos/nme red.png" class="logo">
-          <img src="images/logos/musicradar red.png" class="logo">
-          <img src="images/logos/EDM+com red.png" class="logo">
-          <img src="images/logos/okayplayer red.png" class="logo">
-        </div>
-      </div>
+      </section>
 
+      <section class="section" id="mixes">
+        <div class="wrap grid">
+          <div>
+            <span class="eyebrow">Listen</span>
+            <h2>DJ Mixes</h2>
+            <p>Live sets from Oslo venues and studio mixes.</p>
+            <dl class="specs">
+              <div>
+                <dt>Plays</dt>
+                <dd>House, disco and groove, UK garage, tech house and melodic, plus hip-hop and pop when the room wants it</dd>
+              </div>
+              <div>
+                <dt>For</dt>
+                <dd>Clubs, bars and restaurants, corporate events, weddings and private parties</dd>
+              </div>
+            </dl>
+            <a class="more" href="about.html#played">Where he&rsquo;s played &rarr;</a>
+          </div>
+          <ul class="mixes align-h2">
+            <li><iframe src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;dark=1&amp;feed=%2Fcalbmusic%2Fproper-party-live-kulturhuset%2F" title="Mixcloud player"></iframe></li>
+            <li><iframe src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;dark=1&amp;feed=%2Fcalbmusic%2Fhouse-teatro-terasse-june-2023%2F" title="Mixcloud player"></iframe></li>
+            <li><iframe src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;dark=1&amp;feed=%2Fcalbmusic%2Fprimetime-mix-house-melodic-tech-house%2F" title="Mixcloud player"></iframe></li>
+            <li><iframe src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;dark=1&amp;feed=%2Fcalbmusic%2Flive-bymad-groove-house-rap%2F" title="Mixcloud player"></iframe></li>
+            <li><iframe src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;dark=1&amp;feed=%2Fcalbmusic%2Fburgerhouse-mix-restaurant-tunes%2F" title="Mixcloud player"></iframe></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="mashups">
+        <div class="wrap grid reverse">
+          <div class="media-first align-h2">
+            <div id="player-container1" class="player-container">
+              <div class="mlvp-container">
+                <div id="vid_frame1"></div>
+              </div>
+              <div class="mlvp-arrows">
+                <div class="mlvp-arrow-left" aria-label="Previous"><i class="demo-icon icon-left-open">&#xe800;</i></div>
+                <div class="mlvp-arrow-right" aria-label="Next"><i class="demo-icon icon-right-open">&#xe801;</i></div>
+              </div>
+              <div class="mlvp-list-container">
+                <div class="mlvp-list noselect"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow">Visual albums</span>
+            <h2>Longform Mashup Projects</h2>
+            <p>Full-length visual albums built from music by Daft Punk, Beyonc&eacute;, Michael Jackson, Bon Iver, Frank Ocean, Tame Impala,
+              The 1975, James Blake and A$AP Rocky.</p>
+            <p class="stat"><b>4.5M+</b> views on YouTube.</p>
+            <ul class="praise">
+              <li>&ldquo;Interdisciplinary works of art&rdquo; <cite>EDM.com</cite></li>
+              <li>&ldquo;Pretty damn good&rdquo; <cite>NME</cite></li>
+              <li>&ldquo;Impressed as f***&rdquo; <cite>Justin Vernon, Bon Iver</cite></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="press" aria-label="Featured on">
+        <div class="wrap">
+          <div class="press-strip-head">
+            <span class="eyebrow">Featured on</span>
+            <a class="more" href="about.html#press">Press &amp; praise &rarr;</a>
+          </div>
+          <div class="logos">
+            <a href="https://www.nme.com/news/music/someones-mashed-together-frank-oceans-blonde-and-tame-impalas-currents-2901125" target="_blank" rel="noopener"><img src="images/logos/nme red.png" alt="NME"></a>
+            <img src="images/logos/triplej red.png" alt="triple j" class="tall">
+            <a href="https://www.musicradar.com/news/listen-to-an-album-length-mashup-of-michael-jacksons-thriller-and-daft-punks-random-access-memories" target="_blank" rel="noopener"><img src="images/logos/musicradar red.png" alt="MusicRadar"></a>
+            <a href="https://edm.com/music-releases/daft-punk-michael-jackson-mashup-album/" target="_blank" rel="noopener"><img src="images/logos/EDM+com red.png" alt="EDM.com"></a>
+            <a href="https://www.okayplayer.com/this-frank-ocean-and-tame-impala-mash-up-album-works-way-too-well/441551" target="_blank" rel="noopener"><img src="images/logos/okayplayer red.png" alt="Okayplayer"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap band-grid">
+          <div>
+            <h2>Booking</h2>
+            <p>Clubs, bars, restaurants, corporate events, weddings and private parties.
+              <a href="mailto:belacmu@gmail.com?subject=DJ%20booking%20inquiry">belacmu@gmail.com</a></p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="mailto:belacmu@gmail.com?subject=DJ%20booking%20inquiry">Get in touch</a>
+            <a class="btn ghost" href="about.html">About Calb &rarr;</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>&copy; Calb &middot; Oslo</span>
+        <ul>
+          <li><a href="mailto:belacmu@gmail.com?subject=DJ%20booking%20inquiry">Booking</a></li>
+          <li><a href="https://www.instagram.com/calbmusic/">Instagram</a></li>
+          <li><a href="https://www.mixcloud.com/calbmusic/">Mixcloud</a></li>
+          <li><a href="https://www.youtube.com/@Calbmusic">YouTube</a></li>
+        </ul>
+      </div>
     </footer>
-    
   </body>
 </html>
